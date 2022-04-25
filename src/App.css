@@ -1,0 +1,76 @@
+:root {
+  --main-bg-color: #ee6352;
+  --main-text-color: #fff;
+  --main-bg-text: #59cd90;
+  --list-color: #3fa7d6;
+  --main-as: #fac05e;
+  --main-as2: #f79d84;
+  --autocomplete-width: 20rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  color: var(--main-text-color);
+  display: flex;
+  justify-content: center;
+}
+
+.screen-reader {
+  position: absolute;
+  left: -10000px;
+  top: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.MovieSearch-Container {
+  color: var(--main-color);
+  width: var(--autocomplete-width);
+  margin: auto;
+}
+
+.MovieSearch-Input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: start;
+  margin: 0px;
+  outline: none;
+  padding: 0px 1rem;
+}
+
+.MovieSearch-List {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.MovieSearch-List li:last-child {
+  border-bottom: none;
+}
+
+.MovieSearch-List-Item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.MovieSearch-List-Item:hover {
+  /* border-bottom: 1px solid var(--main-bg-text); */
+  text-decoration: var(--main-bg-text) underline;
+  font-weight: bold;
+}
